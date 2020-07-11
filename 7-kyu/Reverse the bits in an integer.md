@@ -34,14 +34,14 @@ ____
 
 ## Examples
 
-
+1. 
 ```js
   function reverseBits(n) {
     const binaryReverse = n.toString(2).split('').reverse().join('')
     return parseInt(binaryReverse, 2)
   }
 ```
-
+2. 
 ```js
 function reverseBits (n) {
   let tmp = n.toString(2);

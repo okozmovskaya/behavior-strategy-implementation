@@ -1,5 +1,5 @@
 # 6 kyu
-# How many days are we represented in a foreign country?
+# [How many days are we represented in a foreign country?](https://www.codewars.com/kata/58e93b4706db4d24ee000096)
 
 My colleagues make business trips to a foreign country. We must find the number of days our company is represented in a foreign country. Every day that one or more colleagues are present in the foreign country is a day that the company is represented. A single day cannot count for more than one day.
 
@@ -20,11 +20,11 @@ daysRepresented(`number start`, `number end`) -> integer (number of days between
 1. __Parameters__
 
 for write this function we use next methods and parameters:
-`map` method to transform each element of the arrays like as start and end of segment
-`reduce` method to reduces the array to a single value
-`concat ` method to creates a new array that includes values from other arrays and additional items
-`Set` object to collection of new items
-`size` property to return the number of elements in the Set
+- `map` method to transform each element of the arrays like as start and end of segment;
+- `reduce` method to reduces the array to a single value;
+- `concat` method to creates a new array that includes values from other arrays and additional items;
+- `Set` object to collection of new items;
+- `size` property to return the number of elements in the Set.
 
 2. __Return value__
 
