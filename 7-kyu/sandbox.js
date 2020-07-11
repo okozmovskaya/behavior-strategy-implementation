@@ -19,13 +19,11 @@ function reverseBits (n) {
 //   How many days are we represented in a foreign country?
 
 function daysRepresented(trips){
-    var arr=[];
-    for (var i=0; i<trips.length; ++i)
-      for (var j=trips[i][0]; j<=trips[i][1]; ++j)
-        if (arr.indexOf(j)==-1)
-          arr.push(j);
-    return arr.length;
-  }
+  const days = trips
+    .map(([start, end]) => [...Array(end - start + 1)].map((_, i) => i + start))
+    .reduce((arr, val) => arr.concat(val), [])
+  return new Set(days).size;
+}
 
 //   or
 
@@ -40,11 +38,13 @@ function daysRepresented(trips) {
 //   or
 
 function daysRepresented(trips){
-    const days = trips
-      .map(([start, end]) => [...Array(end - start + 1)].map((_, i) => i + start))
-      .reduce((arr, val) => arr.concat(val), [])
-    return new Set(days).size;
-  }
+  var arr=[];
+  for (var i=0; i<trips.length; ++i)
+    for (var j=trips[i][0]; j<=trips[i][1]; ++j)
+      if (arr.indexOf(j)==-1)
+        arr.push(j);
+  return arr.length;
+}
 
 //   Sentences should start with capital letters.
 
